@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LightBox Exercise</title>
+    <!-- Font-Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <!-- Hero -->
+      <div class="hero-items">
+        <h1>Hero Title</h1>
+        <h2>section subtitle</h2>
+        <button class="btn">Open LightBox</button>
+      </div>
+    </header>
+
+    <!-- Colored Box Grid -->
+    <div class="container">
+      <article class="item item-1" id="item-1"></article>
+      <article class="item item-2" id="item-2"></article>
+      <article class="item item-3" id="item-3"></article>
+      <article class="item item-4" id="item-4"></article>
+    </div>
+
+    <!-- Lightbox Popup -->
+    <div class="lightbox-overlay">
+      <div class="lightbox-container">
+        <div class="lightbox-items">
+          <h2>The Magically Appearing Lightbox!</h2>
+          <br />
+          <br />
+          <p>
+            This is just the beginning! Contact us today about the variety of
+            lightboxes we can put on your website!
+          </p>
+          <button class="close-btn"><i class="fas fa-times"></i></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- javascript -->
+    <script src="app.js"></script>
+  </body>
+</html>

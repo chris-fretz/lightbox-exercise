@@ -1,0 +1,140 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+p {
+  font-size: 1.35rem;
+}
+
+header {
+  margin: 1.5rem;
+  min-height: 550px;
+  background-color: orange;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.hero-items {
+  position: absolute;
+  top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+h1 {
+  font-size: 6rem;
+  padding: 1.5rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  padding: 0.75rem;
+}
+
+.btn {
+  font-size: 1.5rem;
+  margin: 2rem;
+  background-color: white;
+  display: inline-block;
+  border-radius: 10rem;
+  padding: 1.25rem 3rem;
+  border: none;
+  box-shadow: 0 6px 5px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+  color: rgb(75, 71, 71);
+  transform: scale(1.1);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem 1rem;
+  padding: 1.5rem;
+  margin: 20px auto;
+}
+
+.item {
+  margin: 10px 7x;
+  min-height: 200px;
+  min-width: 60px;
+}
+
+.item-1 {
+  background-color: orange;
+}
+
+.item-2 {
+  background-color: blue;
+}
+
+.item-3 {
+  background-color: black;
+}
+
+.item-4 {
+  background-color: seagreen;
+}
+
+.lightbox-overlay {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  visibility: hidden;
+  z-index: -10;
+}
+
+/* OPEN/CLOSE LIGHTBOX */
+.open-lightbox {
+  visibility: visible;
+  z-index: 10;
+}
+.lightbox-container {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  background: orange;
+  border-radius: 3px;
+  width: 70vw;
+  min-height: 50vh;
+  max-width: var(--fixed-width);
+  text-align: center;
+  position: relative;
+}
+
+.lightbox-items {
+  padding: 2rem;
+}
+
+.close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2rem;
+  background: transparent;
+  border-color: transparent;
+  color: rgb(226, 28, 28);
+  cursor: pointer;
+}
+.close-btn:hover {
+  color: rgb(223, 68, 68);
+  transform: scale(1.3);
+}
