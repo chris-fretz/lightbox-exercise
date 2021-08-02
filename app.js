@@ -1,10 +1,6 @@
 const modalBtn = document.querySelector(".btn");
 const lightbox = document.querySelector(".lightbox-overlay");
 const closeBtn = document.querySelector(".close-btn");
-const item1 = document.getElementById("item-1");
-const item2 = document.getElementById("item-2");
-const item3 = document.getElementById("item-3");
-const item4 = document.getElementById("item-4");
 
 modalBtn.addEventListener("click", function () {
   lightbox.classList.add("open-lightbox");
@@ -20,18 +16,21 @@ window.addEventListener("keydown", function (event) {
   }
 });
 
-item1.addEventListener("click", function () {
-  document.querySelector("header").style.backgroundColor = "orange";
-});
-
-item2.addEventListener("click", function () {
-  document.querySelector("header").style.backgroundColor = "blue";
-});
-
-item3.addEventListener("click", function () {
-  document.querySelector("header").style.backgroundColor = "black";
-});
-
-item4.addEventListener("click", function () {
-  document.querySelector("header").style.backgroundColor = "seagreen";
-});
+document.addEventListener(
+  "click",
+  function (e) {
+    if (e.target.matches(".item-1")) {
+      document.querySelector("header").style.backgroundColor = "orange";
+    }
+    if (e.target.matches(".item-2")) {
+      document.querySelector("header").style.backgroundColor = "blue";
+    }
+    if (e.target.matches(".item-3")) {
+      document.querySelector("header").style.backgroundColor = "black";
+    }
+    if (e.target.matches(".item-4")) {
+      document.querySelector("header").style.backgroundColor = "seagreen";
+    }
+  },
+  false
+);
