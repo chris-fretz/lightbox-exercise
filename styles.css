@@ -24,14 +24,29 @@ header {
 }
 
 .hero-items {
+  position: relative;
+  width: 100%;
+  height: 525px;
+  top: 0;
+}
+
+.hero-item {
   position: absolute;
-  top: 1.7rem;
-  margin-bottom: 2rem;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
+  opacity: 0;
+  visibility: hidden;
   text-align: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 300ms ease;
+}
+
+.hero-item.is-active {
+  opacity: 1;
+  visibility: visible;
 }
 
 h1 {
@@ -61,32 +76,58 @@ h2 {
 }
 
 .container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
   gap: 3rem 1rem;
   padding: 1.5rem;
   margin: 20px auto;
 }
 
-.item {
+article.hero-trigger-item {
+    height: 200px;
+    width: 25vw;
+}
+
+.hero-trigger-item {
   margin: 10px 7x;
   min-height: 200px;
   min-width: 60px;
+  cursor: pointer;
 }
 
-.item-1 {
+.btn {
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+
+.hero-trigger-item-1 {
   background-color: orange;
 }
 
-.item-2 {
+.hero-trigger-item-2 {
   background-color: blue;
 }
 
-.item-3 {
+.hero-trigger-item-3 {
   background-color: black;
 }
 
-.item-4 {
+.hero-trigger-item-4 {
+  background-color: seagreen;
+}
+
+.hero-item-1 {
+  background-color: orange;
+}
+
+.hero-item-2 {
+  background-color: blue;
+}
+
+.hero-item-3 {
+  background-color: black;
+}
+
+.hero-item-4 {
   background-color: seagreen;
 }
 
