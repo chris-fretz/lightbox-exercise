@@ -16,21 +16,6 @@ window.addEventListener("keydown", function (event) {
   }
 });
 
-document.addEventListener(
-  "click",
-  function (e) {
-    if (e.target.matches(".item-1")) {
-      document.querySelector("header").style.backgroundColor = "orange";
-    }
-    if (e.target.matches(".item-2")) {
-      document.querySelector("header").style.backgroundColor = "blue";
-    }
-    if (e.target.matches(".item-3")) {
-      document.querySelector("header").style.backgroundColor = "black";
-    }
-    if (e.target.matches(".item-4")) {
-      document.querySelector("header").style.backgroundColor = "seagreen";
-    }
-  },
-  false
-);
+function changeHeaderColor(color) {
+  document.querySelector("header").style.backgroundColor = color;
+}
