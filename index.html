@@ -16,31 +16,39 @@
   <body>
     <header class="header" id="header">
       <!-- Hero -->
-      <div class="hero-items">
-        <h1>Hero Title</h1>
-        <h2>section subtitle</h2>
-        <button class="btn">Open LightBox</button>
+      <div id="heroItems" class="hero-items">
+        <div class="hero-item hero-item-1 is-active">
+          <h1>Hero Title</h1>
+          <h2>section subtitle</h2>
+          <button class="btn">Open LightBox</button>
+        </div>
+
+        <div class="hero-item hero-item-2">
+          <h1>Hero Title</h1>
+          <h2>section subtitle</h2>
+          <button class="btn">Open LightBox</button>
+        </div>
+
+        <div class="hero-item hero-item-3">
+          <h1>Hero Title</h1>
+          <h2>section subtitle</h2>
+          <button class="btn">Open LightBox</button>
+        </div>
+
+        <div class="hero-item hero-item-4">
+          <h1>Hero Title</h1>
+          <h2>section subtitle</h2>
+          <button class="btn">Open LightBox</button>
+        </div>
       </div>
     </header>
 
     <!-- Colored Box Grid -->
-    <div class="container">
-      <article
-        class="item item-1"
-        onclick="changeHeaderColor('orange')"
-      ></article>
-      <article
-        class="item item-2"
-        onclick="changeHeaderColor('blue')"
-      ></article>
-      <article
-        class="item item-3"
-        onclick="changeHeaderColor('black')"
-      ></article>
-      <article
-        class="item item-4"
-        onclick="changeHeaderColor('seagreen')"
-      ></article>
+    <div id="heroTriggerItems" class="hero-trigger-items container">
+      <article class="hero-trigger-item hero-trigger-item-1" data-index="1" data-color="orange"></article>
+      <article class="hero-trigger-item hero-trigger-item-2" data-index="2" data-color="blue"></article>
+      <article class="hero-trigger-item hero-trigger-item-3" data-index="3" data-color="black"></article>
+      <article class="hero-trigger-item hero-trigger-item-4" data-index="4" data-color="green"></article>
     </div>
 
     <!-- Lightbox Popup -->
